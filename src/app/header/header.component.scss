@@ -1,0 +1,37 @@
+$base-color: #f84b67;
+
+.header__container {
+  margin: 0 0 1em 0;
+  &__wrapper {
+    height: 80px;
+    padding: 0.5em;
+    background-color: rgba($base-color, 1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    &__logo {
+      font-size: 2em;
+      font-weight: bold;
+      & a {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+    &__menu {
+      list-style: none;
+      display: flex;
+      &--item {
+        margin: 0 0.5em 0 0.5em;
+        & a {
+          text-decoration: none;
+          color: #fff;
+          font-size: 1.25em;
+          &:hover {
+            color: rgba(#fff, 0.7);
+          }
+        }
+      }
+    }
+  }
+}
